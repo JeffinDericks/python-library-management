@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .form-group {
+        text-align: center;
+    }
+
+    .form-control {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    button{
+        margin: 0 800px;
+    }
+
+    h1{
+        margin: 0 650px;
+    }
+</style>
+
+<h1>Edit Book Details</h1><br>
+<form action="{{url_for('editbook', id = data['_id'])}}" method="post" class="form">
+    <div class="form-group">
+        <input type="text" class="form-control"  name="bookid" value="{{data['Bookid']}}" required placeholder="Book ID">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="bookname" value="{{data['Bookname']}}" required placeholder="Book Name">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="category" value="{{data['Category']}}" required placeholder="Category">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="writer"  value="{{data['Writer']}}" required placeholder="Writer">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="available" value="{{data['Available']}}" required placeholder="Available">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="review" value="{{data['Review']}}" required placeholder="Review">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="details" value="{{data['Details']}}" required placeholder="Details">
+    </div><br>
+    <button type="submit" class="btn btn-primary">Edit</button>
+</form>
+
+{% endblock %}

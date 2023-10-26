@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://kit.fontawesome.com/8b134085b2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    {% extends "base.html"%}
+
+    {%block content%}
+
+    <header class="netflixheader">
+        <img  class="headerimage" src="../static/images/library_logo-removebg-preview.png" alt="" height="90px" width="70px">
+        
+        <nav>
+            <a href="#" class="anchors">Home</a>
+            <a href="#" class="anchors1">Service</a>
+            <a href="#" class="anchors2">Portfolio</a>
+            <a href="#" class="anchors3">About</a>
+            <a href="#" class="anchors4">FAQS</a>
+            <a href="#" class="anchors5">Browse by Languages</a>
+        </nav>
+
+        <div class="sidebar">
+            <a href="#" class="glass"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></a>
+            <a href="{{url_for('logout')}}" class="signin"><i class="fa-solid fa-right-from-bracket"></i></a>
+            <p class="children">Online Library</p>
+            <a href="#" class="mani"><i class="fa-regular fa-bell" style="color: black;"></i></a>
+            <a href="#" class="jef"></a>
+        </div>
+    </header>
+
+    
+    <div class="container">
+        <div class="row">
+            <div class="col_3">
+                <aside>
+
+            
+                    <div class="home">
+                        <a href="#"><i class="fa-solid fa-book-open" style="color: black;"></i><span class="home1"><strong>Books</strong></span></a>
+                    </div>
+            
+                    <div class="homee">
+                        <a href="#"><i  class="fa-solid fa-code" style="color: #000000;"></i><span class="home2">Categories</span></a>
+                    </div>
+            
+                    <div class="homee">
+                        <a href="#"><i  class="fa-solid fa-users" style="color: #000000;"></i><span class="home2">Members</span></a>
+                    </div>
+            
+                    <div class="homee">
+                        <a href=""><i class="fa-solid fa-envelope" style="color: #000000;"></i><span class="home2">Messages</span></a>
+                    </div>
+            
+                    <div class="homee">
+                        <a href=""><i class="fa-solid fa-bookmark" style="color: #000000;"></i><span class="home2">Book Issue</span></a>
+                    </div>
+            
+                    <div class="homeeee">
+                        <a href="#"><i class="fa-solid fa-envelope-open-text" style="color: #000000;"></i><span class="home2">Notifications</span></a>
+                    </div>
+            
+                    <div class="homee">
+                        <a href="#"><i class="fa-solid fa-floppy-disk" style="color: #000000;"></i><span class="home2">My Book List</span></a>
+                    </div>
+                    <div class="homeee">
+                        <a href="#"><i class="fa-solid fa-bars" style="color: #000000;"></i><span class="home2">Logout</span></a>
+                    </div>
+            
+                    <div class="homee">
+                        <a href="#"><i class="fa-solid fa-house" style="color: #000000;"></i><span class="home2">Profile</span></a>
+                    </div>
+            
+
+
+                </aside>
+            </div>
+
+
+
+
+            <div class="col_9">
+                <div class="headerss">
+                    <h1>Booklist</h1>
+                    <a href="{{url_for('addbooks')}}"><h1>Add Books</h1></a>
+                </div>
+
+                <table class="table">
+                    <tr>
+                        <th>Book ID</th>
+                        <th>Book Name</th>
+                        <th>Category</th>
+                        <th>Writer</th>
+                        <th>Available</th>
+                        <th>Review</th>
+                        <th>Details</th>
+                        <th colspan="2">Action</th>
+                    </tr>
+                    {%for i in box%}
+                    <tr>
+                        <td>{{i.Bookid}}</td>
+                        <td>{{i.Bookname}}</td>
+                        <td>{{i.Category}}</td>
+                        <td>{{i.Writer}}</td>
+                        <td>{{i.Available}}</td>
+                        <td>{{i.Review}}</td>
+                        <td>{{i.Details}}</td>
+                        <td><a href="{{url_for('editbook', id = i['_id'])}}"><button style="background: transparent; border: none;"><i class="fa-regular fa-pen-to-square"></i></button></a></td>
+                        <td><a href="{{url_for('deletebook', id = i['_id'])}}" ><button style="background: transparent; border: none;"><i class="fa-solid fa-trash"></i></button></a></td>
+                    </tr>
+                    {%endfor%}
+                </table>
+            </div>
+        </div>
+    </div>
+    {%endblock%}
+
+</body>
+</html>
+        

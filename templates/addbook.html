@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .form-group {
+        text-align: center;
+    }
+
+    .form-control {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    button{
+        margin: 0 800px;
+    }
+
+    h1{
+        margin: 0 750px;
+    }
+</style>
+
+<h1>Add Book</h1><br>
+<form action="" method="post" class="form">
+    <div class="form-group">
+        <input type="text" class="form-control"  name="bookid" required placeholder="Book ID">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="bookname" required placeholder="Book Name">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="category" required placeholder="Category">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="writer" required placeholder="Writer">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="available" required placeholder="Available">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="review" required placeholder="Review">
+    </div><br>
+    <div class="form-group">
+        <input type="text" class="form-control"  name="details" required placeholder="Details">
+    </div><br>
+    <button type="submit" class="btn btn-primary">Add Book</button>
+</form>
+
+{% endblock %}

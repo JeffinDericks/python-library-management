@@ -1,0 +1,595 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+.container {
+    width: 90%;
+    margin: 0 !important    ;
+}
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.col_1 {
+    width: 8.33%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_2 {
+    width: 16.66%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_3 {
+    width: 25%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_4 {
+    width: 33.33%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_5 {
+    width: 41.66%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_6 {
+    width: 50%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_7 {
+    width: 58.33%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_8 {
+    width: 66.66%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_9 {
+    width: 100%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+    margin-left: 362px;
+}
+
+.col_10 {
+    width: 83.33%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_11 {
+    width: 91.66%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+.col_12 {
+    width: 100%;
+    padding: 0 15px;
+    flex: 0 0 auto;
+}
+
+
+/* frontpage starts here  */
+
+/* header part starts here  */
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+
+.netflixheader {
+    /* background-color: rgb(137, 216, 190); */
+    background-color: white;
+    height: 94px;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    top: 0%;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+}
+
+
+.headerimage {
+    margin-left: 50px;
+    margin-right: 20px;
+}
+
+
+nav a {
+    text-decoration-line: none;
+    font-size: 17px;
+    color: black;
+    font-weight: 550;
+    margin-left: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+.glass {
+    color: black;
+    font-size: 24px;
+    margin-left: 350px;
+    margin-top: 13px;
+}
+
+.children {
+    color: black;
+    font-size: 18px;
+    margin-left: 30px;
+    margin-top: 15px;
+}
+
+.signin{
+    color: black;
+    font-size: 24px;
+    margin-left: 35px;
+    margin-top: 13px;
+}
+
+
+.mani {
+    color: black;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 13px;
+}
+
+.jef {
+    color: black;
+    font-size: 24px;
+    margin-left: 20px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+.sidebar {
+    display: flex;
+    margin-left: 350px;
+}
+
+.loveimages img{
+    margin-top: 92px;
+    filter: brightness(40%);
+    position: relative;
+}
+
+.mantext .pp1{
+    position: absolute;
+    top: 25%;
+    left: 4%;
+    font-size: 28px;
+    color: white;
+}
+
+.login h1{
+    position: absolute;
+    top: 47%;
+    left: 10%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+
+}
+
+.mantext .pp2{
+    position: absolute;
+    top: 30%;
+    left: 4%;
+    font-size: 48px;
+    color: white;
+    font-weight: 550;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.form1 .u{
+    position: absolute;
+    top: 53%;
+    left: 4%;
+    font-size: 26px;
+    height: 50px;
+    width: 300px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.u::placeholder{
+    color: white;
+}
+
+.form1 .p{
+    position: absolute;
+    top: 62%;
+    left: 4%;
+    font-size: 26px;
+    height: 50px;
+    width: 300px;
+    padding-left: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.p::placeholder{
+    color: white;
+}
+
+.form1 button{
+    position: absolute;
+    top: 70%;
+    left: 5.5%;
+    font-size: 26px;
+    height: 50px;
+    width: 250px;
+    padding-left: 15px;
+    border-radius: 10px;
+}
+
+.rightside p{
+    position: absolute;
+    top: 26%;
+    right: 22%;
+    color: white;
+    font-size: 27px;
+}
+
+.rightside h1{
+    font-size: 40px;
+    position: absolute;
+    top: 31%;
+    right: 15%;
+    font-weight: 800;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.rightside span{
+    font-size: 40px;
+    position: absolute;
+    top: 100%;
+    right: 33%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+}
+
+.hr{
+    margin-top: 15px;
+}
+
+.jour{
+    display: flex;
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    /* background-color: rgba(127, 255, 212, 0.459); */
+    justify-content: space-around;
+}
+
+.jour h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+
+/* signup page starts here  */
+
+
+.fotofoto img{
+    filter: brightness(70%);
+    position: relative;
+}
+
+.padammelpadam{
+    height: 650px;
+    width: 550px;
+    background-color: #7777;
+    top: 10%;
+    left: 32%;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.signn{
+    display: flex;
+    /* background-color: #0095f6; */
+    width: 90%;
+    margin-left: 25px;
+    margin-top: 15px;
+    justify-content: space-between;
+    color: white;
+}
+
+.signn p{
+    font-size: 40px;
+    font-weight: 550;
+    color: white;
+}
+
+.signn a{
+    font-size: 30px;
+    margin-top: 8px;
+    color: white;
+}
+
+.quick p{
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 28px;
+    color: white;
+
+}
+
+.formi .fname{
+    margin-top: 20px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 21px;
+    width: 235px;
+    height: 50px;
+    margin-left: 28px;
+}
+
+.formi .emailph{
+    margin-top: 15px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-size: 21px;
+    width: 500px;
+    height: 50px;
+    margin-left: 28px;
+}
+
+.formi .g{
+    margin-top: 10px;
+    margin-left: 30px;
+    color: white;
+}
+
+select{
+    padding: 8px 43px;
+    font-size: 20px;
+    margin-left: 26px;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+.mainlabel{
+    display: flex;
+}
+
+.label{
+    border: 2px solid white;
+    width: 151px;
+    height: 40px;
+    margin-left: 25px;
+    border-radius: 5px;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 9px;
+}
+
+.label .l1{
+    font-size: 20px;
+    text-align: left;
+    margin-right: 50px;
+    color: white;
+
+}
+
+.label .l2{
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin-right: 30px;
+}
+
+.label .l3{
+    font-size: 20px;
+    text-align: left;
+    color: white;
+    margin-right: 50px;
+}
+
+.pp{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: white;
+}
+
+.pp{
+    font-size: 14px;
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.helloo{
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+.createneww{
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+    border: 2px solid black;
+    background-color: black;
+    padding: 15px 80px;
+    border-radius: 15px;
+}
+
+.createneww:hover{
+    cursor: pointer;
+    border: 3px solid rgb(29, 110, 29);
+    background-color: rgb(29, 110, 29);
+}
+
+/* booklist page starts here  */
+
+/* side part starts here  */
+
+/* Ist column begins */
+
+
+
+
+
+.home {
+    /* margin-left: -230px; */
+    margin-top: 120px;
+    font-size: 27px;
+    border: transparent;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.homee {
+    /* margin-left: -230px; */
+    margin-top: 10px;
+    font-size: 27px;
+    border: transparent;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.homeee {
+    /* margin-left: -230px; */
+    margin-top: 10px;
+    font-size: 27px;
+    border: transparent;
+    padding: 10px 10px;
+    display: flex;
+    border-radius: 10px;
+    width: 70%;
+}
+
+.homeeee {
+    /* margin-left: -230px; */
+    margin-top: 10px;
+    font-size: 27px;
+    border: transparent;
+    padding: 10px 5px;
+    display: flex;
+    border-radius: 10px;
+    width: 70%;
+}
+
+
+.home:hover {
+    background-color: #7777;
+    cursor: pointer;
+}
+
+.homee:hover {
+    background-color: #7777;
+    cursor: pointer;
+}
+
+.homeee:hover {
+    background-color: #7777;
+    cursor: pointer;
+}
+
+.homeeee:hover {
+    background-color: #7777;
+    cursor: pointer;
+}
+
+.home1 {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.home2 {
+    margin-top: 5px;
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+
+a {
+    text-decoration-line: none;
+    color: black;
+}
+
+aside {
+    width: 15%;
+    border-right: 3px solid gray;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    margin-left: 40px;
+}
+
+.headerss{
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerss h1{
+    margin-top: 200px;
+}
+
+
+
+
+/* table section starts here */
+
+
+table{
+    border-bottom: 2px solid #7777 ;
+}
+
+.table td{
+    padding: 15px !important;
+}
+
+.table tr:hover{
+    background-color: rgba(211, 211, 211, 0.212);
+    cursor: pointer;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+a{
+    color: black !important;
+    text-decoration: none;
+}

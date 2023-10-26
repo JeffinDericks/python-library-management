@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{%block content%}
+
+<div class="col_9">
+    <table class="table">
+        <tr>
+            <th>S.No</th>
+            <th>Book Name</th>
+            <th>Category</th>
+            <th>Writer</th>
+            <th>Avail</th>
+            <th>Review</th>
+            <th colspan="2">Action</th>
+        </tr>
+        {%for i in box%}
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.bookname}}</td>
+            <td>{{i.category}}</td>
+            <td>{{i.writer}}</td>
+            <td>{{i.avail}}</td>
+            <td>{{i.review}}</td>
+            <td><a href="#"><i class="fa-regular fa-pen-to-square"></i></a></td>
+            <td><a href="#"><i class="fa-solid fa-trash"></i></a></td>
+        </tr>
+        {%endfor%}
+    </table>
+
+{%endblock%}
